@@ -1,0 +1,933 @@
+body
+{
+	height: auto;
+	margin: 0;
+	height: 1200px;
+	font-family: lucida sans;
+}
+	/*
+	=========================================
+					navbar-style
+	=========================================
+	*/
+.nav
+{
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	text-align: center;
+	position: relative;
+	
+	
+}
+.nav .content
+{
+	width: 80%;
+	margin:auto;
+	padding-top: 10px;
+	
+}
+.nav .logo
+{
+	
+	float: left;
+	line-height: 60%;	
+}
+.nav .logo h2
+{
+	font-family: expanded;
+	font-size: 25px;
+}
+
+.nav input, .nav label
+{
+	position: absolute;
+	top: 5px;
+	right: 25px;
+}
+.nav input
+{
+	display: none;
+}
+
+.nav label
+{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background:url('../images/navbar/open.png') no-repeat;
+	background-size: cover;
+	padding:20px;
+	cursor: pointer;
+
+}
+.nav input:checked ~ .links ul 
+	{
+		display: block;
+
+	}
+.nav input:checked ~ label
+{
+	
+	background:url('../images/navbar/close.png') no-repeat;
+	background-size: cover;
+	
+
+}
+
+.nav .links
+{
+	float: right;
+}
+
+
+
+
+.nav .links ul li
+{
+
+	display: inline-block;
+	list-style: none;
+	line-height: 60%;
+
+}
+
+.nav .links li a
+{
+
+	cursor: pointer;
+	text-decoration: none;
+	color: #000023;
+	padding: 13px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: expanded;
+}
+.nav .links li a:hover
+{
+	color: #e82300;
+}
+.nav .links li .red
+{
+	color: #e82300;
+}
+
+
+
+
+/*
+=========================================================
+					MediaQuery
+=========================================================
+*/
+
+@media (max-width: 919px)
+{
+	.nav
+	{
+		height: auto;
+	}
+	.nav .logo
+	{
+		width: 100%;
+		float: none;
+	}
+	.nav .links
+	{
+		width: 100%;
+		float: none;
+
+	} 
+	.nav .links ul
+	{
+		
+		display: none;
+		
+
+	}
+	.nav .links ul li
+	{
+		width: 100%;
+		padding: 15px;
+	}
+
+	
+}
+@media (min-width: 992px)
+{
+	.nav label
+	{
+		display: none;
+	}
+
+}
+	
+
+/*
+=============================================================
+					Home-style
+=============================================================
+
+*/
+
+.home
+{
+	width: 100%;
+	height: 450px;
+	background: url('../images/home/home-bgg.jpg');
+	background-size: cover;
+	text-align: center;
+}
+.home h1
+{
+	margin: 0;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #5e5e5e;
+	padding-top: 5px;
+
+}
+.home p:first-of-type
+{
+	font-size: 23px;
+	font-weight: bold;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: #eb4a17;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.home p:nth-of-type(2)
+{
+	padding-top: 30px;
+	color: #808080;
+	line-height: 1.8;
+}
+.home p:nth-of-type(2) span
+{
+	color: #55575e;
+	font-weight: bold;
+
+}
+
+.home button
+{
+	color: #fff;
+	background: #eb4a17;
+	width: 150px;
+	padding:15px;
+	border: 0;
+	font-weight: bold;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.home button:hover
+{
+	background: #fff;
+	color: #eb4a17;
+}
+/*
+================================================================
+						Home MediaQuery
+================================================================
+*/
+
+@media (max-width: 768px)
+{
+	.home h1
+	{
+		font-size: 35px;
+	}
+	.home p:first-of-type
+	{
+		font-size: 15px;
+	}
+	.home p:nth-of-type(2)
+	{
+		font-size: 20px;
+		line-height: 1.5;
+	}
+	.home button
+	{
+		width: 120px;
+		padding: 15px;
+
+	}
+}
+
+
+/*
+==============================================================
+							Work Section
+==============================================================
+*/
+
+.work
+{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	
+	
+}
+.work .title
+{
+	font-size: 50px;
+	padding-top: 50px;
+	margin-bottom: 35px;
+	position: relative;
+	left: 150px;
+	text-transform: uppercase;
+}
+.work .title span
+{
+	font-weight: normal;
+}
+
+.work .part
+{
+	width: 25%;
+	height: auto;
+	border: 2px solid #b9b9b9;
+	text-align: center;
+	float: left;
+	margin-left: 5%;
+	box-sizing: border-box;
+
+
+}
+
+
+.work .part .icon
+{
+	padding-top: 50px ;
+	padding-bottom: 30px;
+	color: #7f7f7f;
+
+}
+
+.work .part .part-h3
+{
+	color: #e83e14;
+}
+
+
+
+.work .part .part-hr
+{
+	width: 30%;
+	margin-top: 40px;
+}
+.work .part .part-p
+{
+	padding: 30px 60px 50px 60px;
+	color: #929092;
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+/*
+=============================================
+			Work MediaQuery
+=============================================
+*/
+
+@media (max-width: 768px)
+{
+	.work .part
+	{
+		width: 40%;
+		margin-bottom: 5px;
+	}
+
+}
+
+@media (max-width: 565px)
+{
+	.work .part
+	{
+		float: none;
+		width: 90%;
+		margin-bottom: 2%;
+		box-sizing: border-box;
+
+	}
+
+	.work .title
+	{
+		transform: translate(-25%,0%);
+	}
+	
+}
+
+/*
+=====================================================
+				Portfolio
+=====================================================
+*/
+
+.portfolio
+{
+	width: 100%;
+	background: #f8f8f8;
+	text-align: center;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.portfolio .portfolio-h4
+{
+	color:#383838;
+	padding-top: 15px;
+	font-size: 20px;
+
+}
+.portfolio .portfolio-h4 span
+{
+	font-weight: normal;
+}
+.portfolio .portfolio-ul
+{
+	list-style: none;
+	padding-bottom: 20px;
+
+}
+.portfolio .portfolio-ul .portfolio-li
+{
+	color: #a2a2a2;
+	width: 70px;
+	display: inline-block;
+	padding:10px;
+}
+
+.portfolio .portfolio-ul .portfolio-li.active
+{
+	background: #eb5424;
+	color: #fff;
+
+
+}
+
+.box div
+{
+	width: 25%;
+	float: left;
+	font-size: 0;
+	position: relative;
+}
+.box div img
+{
+	width: 100%;
+
+}
+
+.box div .overlay
+{
+	
+	background:rgba(235,84,36,.5);
+	font-size: 15px;
+	position: absolute;
+	top:0 ;
+	bottom: 0;
+	left:0 ;
+	right: 0;
+	margin: 0;
+	opacity: 0;
+
+}
+
+.box div .overlay span
+{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	padding: 10px;
+	border: 1px solid  #eb5424;
+	cursor: pointer;
+
+}
+.box div:hover .overlay
+{
+	opacity: 1;
+}
+
+@media (max-width: 575px)
+{
+	.portfolio .portfolio-ul .portfolio-li 
+	{
+		display: block;
+		margin:auto;
+
+	}
+	.box div
+	{
+		width: 100%;
+	}
+
+}
+
+
+@media (min-width: 575px) and (max-width: 768px)
+{
+	.box div
+	{
+		width: 50%;
+	}
+
+}
+/*
+===========================================================
+				Profile
+===========================================================
+*/
+
+
+.profile
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 50px 0;
+	text-align: left;
+	
+
+}
+.profile .my-profile
+{
+	float: left;
+	width: 50%;
+
+
+
+}
+
+
+.profile .my-profile .profile-h1
+{
+	margin-left: 40px;
+	margin-top: 0;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: tahoma;
+
+
+}
+.profile .skills .skills-h1
+{
+	margin: 0;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: tahoma;
+
+}
+
+.profile .my-profile .profile-h1 span,  .profile .skills .skills-h1 span
+{
+	font-weight: normal;
+}
+
+.profile .my-profile .profile-ul
+{
+	list-style: none;
+	color: #575757;
+}
+.profile .my-profile .profile-ul .profile-li
+{
+	margin-bottom: 13px;
+
+
+}
+.profile .my-profile .profile-ul .profile-li span
+{
+	width: 100px;
+	display: inline-block;
+	font-weight: bold;
+
+}
+
+.profile .my-profile .profile-ul .profile-li span.web 
+{
+	color: #f39673;
+	font-weight: normal;
+}
+.profile .skills 
+{
+	overflow: hidden;
+	margin-right: 60px;
+}
+
+.profile .skills .skills-p
+{
+	color: #575757;
+	font-size: 15px;
+	line-height: 1.5;
+}
+.profile .skills .bar
+{
+	
+	margin-bottom: 10px;
+
+	
+}
+
+.profile .skills .bar span.spa
+{
+	float: left;
+}
+.profile .skills .bar span.bar-spa
+{
+	float: right;
+	margin-right:100px;
+}
+
+.profile .skills .bar .parent
+{
+	clear: both;
+	height: 3px;
+	position: relative;
+	top: 5px;
+	background:#e4e4e4;
+	border-top-right-radius: 30px;
+
+}
+
+.profile .skills .bar .parent span
+{
+	display: block;
+	position: absolute;
+	height: 100%;
+	background: #e43f0b;
+
+}
+.profile .skills .bar .parent span.spa1
+{
+	
+	width: 100%;
+	
+}
+
+
+.profile .skills .bar .parent span.spa2
+{
+	
+	width: 90%;
+
+}
+.profile .skills .bar .parent span.spa3
+{
+	
+	width: 80%;
+}
+
+/*
+===========================================
+		profile MediaQuery
+===========================================
+
+*/
+@media (max-width: 575px)
+{
+	.profile .my-profile
+	{
+		width: 100%;
+		float: none;
+	}
+	.profile .skills
+	{
+		margin-left: 40px;
+	}
+}
+
+
+/*
+============================================
+			creative
+============================================
+*/
+
+.creative
+{
+	width: 100%;
+	height: 700px;
+	background: url('../images/creative/about-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.creative .creative-info
+{
+	width: 50%;
+	float: right;
+	text-align: left;
+	font-family: tahoma;
+}
+
+.creative .creative-h4
+{
+	font-size: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-top: 20px;
+
+
+}
+.creative .creative-h4 span
+{
+	font-weight: bold;
+}
+
+.creative .creative-h1
+{
+	color: #ea4d1f;
+	text-transform: uppercase;
+	transform: translate(0,-20px);
+
+}
+
+.creative .creative-h1 span
+{
+	font-weight: normal;
+
+}
+
+.creative .creative-p
+{
+	color: #888;
+	line-height: 1.5;
+}
+
+
+@media (max-width: 900px)
+{
+	.creative
+	{
+		height: auto;
+		background: cover;
+		overflow: hidden;
+
+	}
+	.creative .creative-info
+	{
+		font-size: 15px;
+		float: none;
+		margin: auto;
+
+	}
+}
+
+.social-media
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+
+}
+
+.social-media .social
+{
+	
+	width: 33.33%;
+	float: left;
+	padding: 80px 0 80px 30px;
+	text-align: left;
+	box-sizing: border-box;
+	position: relative;
+	
+}
+.social-media .social.facebook
+{
+	background: #3b5998;
+}
+
+.social-media .social.twitter
+{
+	background: #498cbf;
+}
+
+.social-media .social.pin
+{
+	background: #cc2127;
+}
+
+.social-media .icon
+{
+	color: #8c8b8a;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+
+}
+
+.social-media .social .social-p
+{
+	
+	
+	font-family: tahoma;
+	font-size: 15px;
+
+	
+}
+.social-media .social .social-p span
+{
+	display: block;
+	
+
+
+
+}
+.social-media .social .social-p .social-span1
+{
+	color: #fff;
+	font-weight: bold;
+	transform: translate(0%,-90%);
+	
+	
+
+}
+.social-media .social .social-p .social-span2
+{
+	color: #fff;
+	
+	
+}
+
+/*
+================================================
+			social MediaQuery
+================================================
+*/
+
+@media (max-width: 700px)
+{
+	
+	.social-media .social
+	{
+		width: 100%;
+		float: none;
+	}
+	
+
+}
+
+/*
+=================================================
+				Drop
+=================================================
+*/
+
+.drop
+{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 50px 0;
+}
+.drop .drop-h1
+{
+	font-size: 50px;
+	margin-bottom: 50px;
+
+}
+.drop .drop-h1 span
+{
+	font-weight: normal;
+}
+
+.drop form
+{
+	width: 50%;
+	margin:auto;
+	
+}
+.drop form input
+{
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	border:1px solid #888;
+	outline: 0;
+}
+.drop form textarea
+{
+	width: 100%;
+	background: #ccc;
+	box-sizing: border-box;
+	margin-bottom: 7px;
+	outline: 0;
+}
+
+.drop .form-input
+{
+	overflow: hidden;
+}
+.drop .form-input input
+{
+	width: 49%;
+	
+}
+.drop .form-input input[type=text]
+{
+	float: left;
+}
+.drop .form-input input[type=email]
+{
+	float: right;
+}
+
+.drop form input[type=submit]
+{
+	width: 60%;
+	background: #fff;
+	padding: 7px;
+	text-align: center;
+	border: 0;
+	border:1px solid #888;
+	text-transform: uppercase;
+}
+@media (max-width: 575px)
+{
+	.drop .drop-h1
+	{
+		font-size: 30px;
+	}
+	.drop .form-input input
+	{
+		width: 100%;
+
+	}
+
+	.drop form input[type=submit]
+	{
+		text-align: center;
+		font-size: 10px;
+	}
+	.drop form
+	{
+		width: 90%;
+	}
+
+}
+
+
+.footer
+{
+	height: 50px;
+	text-align: center;
+}
+.footer p
+{
+	color: #888;
+}
